@@ -1,0 +1,263 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* EmployeeList Container */
+.employee-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Add New Employee Button */
+.employee-list-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-list-container a:hover {
+    background-color: #45a049;
+}
+
+/* Employee List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+button:active {
+    background-color: #0a6bb0;
+}
+
+/* Layout for Buttons */
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li div button:nth-child(2) {
+    background-color: #f44336;
+}
+
+li div button:nth-child(2):hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-list-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* General form container styling */
+.employee-form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form-container h1 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form element styling */
+.employee-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-form-container label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.employee-form-container input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.employee-form-container input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styling */
+.employee-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-form-container button:hover {
+    background-color: #388E3C;
+}
+
+/* Optional styling for spacing between labels and inputs */
+.employee-form-container label,
+.employee-form-container input[type="text"] {
+    margin-top: 10px;
+}
+
+.employee-form-container label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* General styling for the employee details container */
+.employee-detail-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+.employee-detail-container h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Employee details text styling */
+.employee-detail-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Label and value styling */
+.employee-detail-container strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Edit link styling */
+.employee-detail-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.employee-detail-container a:hover {
+    background-color: #388E3C;
+}
